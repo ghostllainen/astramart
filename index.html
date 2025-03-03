@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Астрамарт</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/logo/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="header-top">
+            <div class="header-top-content container">
+                <div class="location">
+                <a href="">Россия, Москва</a>
+                </div>
+                <a href="#popular">Популярное</a>
+                <a href="#promo">Акции</a>
+                <a href="#brands">Бренды</a>
+                <a href="#news">Новости</a>
+                <a href="#about">О нас</a>
+                <a href="#advantages">Почему мы?</a>
+                <a href="#contacts">Контакты</a>
+                <div class="phone">
+                    <a href="tel:+79393073030">8 939 307 30-30</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom-container container">
+                <a href="index.html">
+                    <img src="assets/images/logo/logo.svg" alt="">
+                </a>
+                <a href="catalogue.html#anchor" class="btn-header">Каталог</a>
+                <input type="text" class="search" placeholder="Поиск товаров">
+                <div class="icons">
+                    <button id="myBtn">
+                        <div class="icon-card">
+                            <img src="assets/images/icons/user.svg" alt="">
+                            <p class="fs12">Профиль</p>
+                        </div>
+                    </button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-titles">
+                                    <h2 class="authText">Вход</h2>
+                                    <h2 class="loginText">Регистрация</h2>
+                                </div>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" class="inputModal" placeholder="Имя">
+                                <input type="mail" class="inputModal" placeholder="Электронная почта">
+                                <input type="text" class="inputModal" placeholder="Создайте пароль">
+                                <input type="text" class="inputModal" placeholder="Подтверждение пароля">
+                                <input type="submit" value="Войти" class="btn-catalogue">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <script>
+                        var modal = document.getElementById("myModal");
+                        var btn = document.getElementById("myBtn");
+                        var span = document.getElementsByClassName("close")[0];
+                        btn.onclick = function () {
+                            modal.style.display = "block";
+                        }
+                        span.onclick = function () {
+                            modal.style.display = "none";
+                        }
+                        window.onclick = function (event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                    <button>
+                        <div class="icon-card">
+                            <img src="assets/images/icons/heart.svg" alt="">
+                            <p class="fs12">Избранное</p>
+                        </div>
+                    </button>
+
+                    <button>
+                        <div class="icon-card">
+                            <img src="assets/images/icons/cart.svg" alt="">
+                            <p class="fs12">Корзина</p>
+                        </div>
+                    </button>
+                    <button>
+                        <div class="icon-card">
+                            <img src="assets/images/icons/box.svg" alt="">
+                            <p class="fs12">Заказы</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner start -->
+    <div class="banner container">
+        <div class="banner-content">
+            <p class="bnr">НОВИНКА</p>
+            <h1>КАЖДАЯ ИДЕЯ<br>НАЙДЕТ СВОЕ<br>ВОПЛОЩЕНИЕ</h1>
+            <p class="bnr">СКИДКИ ДО 25% НА СКЕТЧБУКИ ОТ VISTA-ARTISTA</p>
+            <a href="catalogue.html" class="btn-banner">Перейти в каталог</a>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- categories start -->
+    <div class="categories container mt100" id="categories">
+        <h2>Популярные категории</h2>
+        <div class="category-cards">
+            <div class="category">
+                <div class="artist c-card">
+                </div>
+                <p class="fs12">Товары для художников</p>
+            </div>
+            <div class="category">
+                <div class="sewing c-card">
+                </div>
+                <p class="fs12">Шитье</p>
+            </div>
+            <div class="category">
+                <div class="beads c-card">
+                </div>
+                <p class="fs12">Бисероплетение</p>
+            </div>
+            <div class="category">
+                <div class="crochet c-card">
+                </div>
+                <p class="fs12">Вязание</p>
+            </div>
+            <div class="category">
+                <div class="stationary c-card">
+                </div>
+                <p class="fs12">Школьные принадлежности</p>
+            </div>
+            <div class="category">
+                <div class="other c-card">
+                </div>
+                <p class="fs12">Хобби и творчество</p>
+            </div>
+        </div>
+    </div>
+    <!-- categories end -->
+
+    <!-- popular start -->
+    <div class="popular container mt100" id="popular">
+        <h2>Популярно сейчас</h2>
+        <div class="p-cards">
+            <div class="p-card">
+                <img src="assets/images/popular/1.jpg">
+                <div class="price">
+                    <p class="price-text">227 ₽</p>
+                    <img src="assets/images/icons/heart.svg" alt="">
+                </div>
+                <p class="fs14">Краска акриловая "Ладога" 46 мл</p>
+                <div class="stars">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                </div>
+                <a href="#" class="btn-catalogue">В корзину</a>
+            </div>
+            <div class="p-card">
+                <img src="assets/images/popular/2.jpg">
+                <div class="price">
+                    <p class="price-text">150 ₽</p>
+                    <img src="assets/images/icons/heart.svg" alt="">
+                </div>
+                <p class="fs14">Пряжа ADELIA "JANE" 100% акрил 50 г 227 м №01</p>
+                <div class="stars">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="" class="grey">
+                </div>
+                <a href="#" class="btn-catalogue">В корзину</a>
+            </div>
+            <div class="p-card">
+                <img src="assets/images/popular/3.jpg">
+                <div class="price">
+                    <p class="price-text">209 ₽</p>
+                    <img src="assets/images/icons/heart.svg" alt="">
+                </div>
+                <p class="fs14">"Craft&Clay" полимерная глина CCH 52 г 1001 белый</p>
+                <div class="stars">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                </div>
+                <a href="#" class="btn-catalogue">В корзину</a>
+            </div>
+            <div class="p-card">
+                <img src="assets/images/popular/4.jpg">
+                <div class="price">
+                    <p class="price-text">138 ₽</p>
+                    <img src="assets/images/icons/heart.svg" alt="">
+                </div>
+                <p class="fs14">Краска акварель "Белые ночи" кювета 2.5 мл</p>
+                <div class="stars">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                    <img src="assets/images/icons/star.svg" alt="">
+                </div>
+                <a href="#" class="btn-catalogue">В корзину</a>
+            </div>
+        </div>
+    </div>
+    <!-- popular end -->
+
+    <!-- promo start -->
+    <div class="promo container mt100" id="promo">
+        <h2>Акции</h2>
+        <div class="promo-cards">
+            <div class="promo-card">
+                <img src="assets/images/promo/1.png" alt="">
+                <p class="promo-title">Счастливые часы</p>
+                <p class="fs14">Скидка с 10:00 до 13:00 по социальным документам и карте постоянного покупателя.</p>
+            </div>
+            <div class="promo-card">
+                <img src="assets/images/promo/2.png" alt="">
+                <p class="promo-title">Распродажа бумаги для декупажа</p>
+                <p class="fs14">Скидка 50% на любые декупажные карты! Наборы от любимых брендов по выгодной цене.</p>
+            </div>
+            <div class="promo-card">
+                <img src="assets/images/promo/3.png" alt="">
+                <p class="promo-title">Новогодние подарки для Вас!</p>
+                <p class="fs14">Снижены цены на новогодние товары для творчества и рукоделия/</p>
+            </div>
+        </div>
+    </div>
+    <!-- promo end -->
+
+    <!-- brands start -->
+    <div class="brands container mt100" id="brands">
+        <h2>Бренды</h2>
+        <div class="brands-cards">
+            <a href="">
+                <div class="b-card"><img src="assets/images/brands/copic.png" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="b-card"><img src="assets/images/brands/gamma.png" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="b-card"><img src="assets/images/brands/centropen.png" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="b-card"><img src="assets/images/brands/fimo.png" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="b-card"><img src="assets/images/brands/decola.png" alt="">
+                </div>
+            </a>
+            <a href="">
+                <div class="b-card k"><img src="assets/images/brands/kohinoor.svg" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- brands end -->
+
+    <!-- news start -->
+    <div class="news container mt100" id="news">
+        <h2>Новости</h2>
+        <div class="news-cards">
+            <div class="n-card">
+                <div class="news-bg painter">
+                    <p class="news-title">8 декабря — день художника</p>
+                </div>
+                <div class="news-tags">
+                    <p class="tag">Праздники</p>
+                    <p class="tag">08.12.2024, 10:00</p>
+                </div>
+                <p class="fs12">Профессиональный вы художник или нет – праздник для всех! Порадуйте себя новыми
+                    материалами для любимого увлечения.</p>
+                <a href="#" class="btn-catalogue">Читать далее</a>
+            </div>
+            <div class="n-card">
+                <div class="news-bg mc">
+                    <p class="news-title">Новые семейные мастер-классы</p>
+                </div>
+                <div class="news-tags">
+                    <p class="tag">События</p>
+                    <p class="tag">02.12.2024, 13:00</p>
+                </div>
+                <p class="fs12">Приходите осваивать разные техники рукоделия всей семьей! Безопасное пространство для
+                    заинтересованных творчестве с любым уровнем.</p>
+                <a href="#" class="btn-catalogue">Читать далее</a>
+            </div>
+            <div class="n-card">
+                <div class="news-bg wool">
+                    <p class="news-title">История удивительного валяльного мастерства</p>
+                </div>
+                <div class="news-tags">
+                    <p class="tag">Статьи</p>
+                    <p class="tag">30.11.2024, 09:00</p>
+                </div>
+                <p class="fs12">Валяная шерсть – поистине уникальный и универсальный материал с множеством применений.
+                    Она согревает, дарит комфорт и даже лечит.</p>
+                <a href="#" class="btn-catalogue">Читать далее</a>
+            </div>
+            <div class="n-card">
+                <div class="news-bg pleinair">
+                    <p class="news-title">Пленэр — что нужно взять с собой?</p>
+                </div>
+                <div class="news-tags">
+                    <p class="tag">Статьи</p>
+                    <p class="tag">30.11.2024, 09:00</p>
+                </div>
+                <p class="fs12">Что может быть лучше живописи на открытом воздухе? Собрали для вас список всего, что
+                    можно и нужно взять с собой на пленэр.
+                </p>
+                <a href="#" class="btn-catalogue">Читать далее</a>
+            </div>
+        </div>
+    </div>
+    <!-- news end -->
+
+    <!-- about start -->
+    <div class="ab-bg mt100" id="about">
+        <div class="ab-content container">
+            <h2 class="ab">О нас</h2>
+            <p class="ab-desc">Астрамарт — сеть хобби-гипермаркетов. У нас вы сможете найти товары для всех видов
+                рукоделия и творчества. В наших магазинах вас ждут интересные мастер-классы, акции и
+                конкурсы.<br><br>Наша миссия — сделать творчество доступным и простым для всех.<br><br>Приходите к нам
+                за удачными покупками, хорошим настроением и творческими идеями!</p>
+        </div>
+        <img class="decor1" src="assets/images/about/1.png" alt="">
+        <img class="decor2" src="assets/images/about/2.png" alt="">
+    </div>
+    <!-- advantages end -->
+
+    <!-- advantages start -->
+    <div class="advantages container mt100" id="advantages">
+        <h2>Почему мы?</h2>
+        <div class="adv">
+            <div class="column">
+                <div class="a-card web">
+                    <div class="top-line">
+                        <img src="assets/images/icons/web.svg" alt="">
+                        <p class="adv-title">Доступные цены</p>
+                    </div>
+                    <p class="adv-desc">С нами Вы сможете подобрать товар или услугу на любой бюджет.</p>
+                </div>
+                <div class="a-card art">
+                    <div class="top-line">
+                        <img src="assets/images/icons/web.svg" alt="">
+                        <p class="adv-title">Творческое пространство</p>
+                    </div>
+                    <p class="adv-desc">Мы регулярно проводим мастер-классы, где Вы сможете хорошо провести время и
+                        найти единомышленников.</p>
+                </div>
+            </div>
+            <img class="brushes" src="assets/images/advantages/adv.jpg" alt="">
+            <div class="column">
+                <div class="a-card truck">
+                    <div class="top-line">
+                        <img src="assets/images/icons/truck.svg" alt="">
+                        <p class="adv-title">Доставка по всей стране</p>
+                    </div>
+                    <p class="adv-desc">В нашем онлайн-магазине представлен ассортимент товаров, которые Вы можете
+                        заказать из любого уголка страны. </p>
+                </div>
+                <div class="a-card quality">
+                    <div class="top-line">
+                        <img src="assets/images/icons/quality.svg" alt="">
+                        <p class="adv-title">Гарантия качества</p>
+                    </div>
+                    <p class="adv-desc">Если товар не будет соответствовать Вашим ожиданиям, Вы сможете вернуть его в
+                        течение 7 дней с момента покупки.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- advantages end -->
+
+    <!-- contacts start -->
+    <div class="contacts container mt100" id="contacts">
+        <h2>Контакты</h2>
+        <div class="contacts-container">
+            <div class="text-info">
+                <div class="section">
+                    <p class="promo-title">Адрес</p>
+                    <p class="fs14">420061, г. Казань, ул. Галеева, д. 3А</p>
+                </div>
+                <div class="section">
+                    <p class="promo-title">Телефон</p>
+                    <a href="tel:+79393073030" class="fs14">+ 8 (939) 307-30-30</a>
+                </div>
+                <div class="section">
+                    <p class="promo-title">Почта</p>
+                    <p class="fs14">astramart@gmail.com</p>
+                </div>
+                <div class="section">
+                    <p class="promo-title">Режим работы</p>
+                    <p class="fs14">Ежедневно с 10:00 до 22:00</p>
+                </div>
+            </div>
+            <img src="assets/images/about/map.png" alt="">
+            <div class="column">
+                <div class="cont-card">
+                    <p class="hugenum">123</p>
+                    <p class="fs14">хобби-гипермаркета входит в состав сети</p>
+                </div>
+                <div class="cont-card">
+                    <p class="hugenum">117</p>
+                    <p class="fs14">магазинов в 54 городах россии</p>
+                </div>
+                <div class="cont-card">
+                    <p class="hugenum">6</p>
+                    <p class="fs14">магазинов в Беларуси и Казахстане</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contacts end -->
+
+    <!-- footer start -->
+    <footer class="mt100">
+        <div class="footer-content container">
+            <a href="index.html"><img src="assets/images/logo/logo-alt.png" alt=""></a>
+            <div class="f-column">
+                <p class="f-title">НАВИГАЦИЯ</p>
+                <a href="#popular">Популярное</a>
+                <a href="#promo">Акции</a>
+                <a href="#brands">Бренды</a>
+                <a href="#news">Новости</a>
+            </div>
+            <div class="f-column">
+                <p class="f-title">О КОМПАНИИ</p>
+                <a href="#about">О нас</a>
+                <a href="#advantages">Почему мы?</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            <div class="f-column">
+                <p class="f-title">СВЯЗЬ</p>
+                <a class="image-column" href="mailto:astramart@gmail.com">
+                    <img src="assets/images/icons/mail.svg" alt="">astramart@gmail.com
+                </a>
+                <a class="image-column" href="tel:+79393073030">
+                    <img src="assets/images/icons/phone.svg" alt="">
+                    <p>+ 8 (939) 307-30-30</p>
+                </a>
+                <p class="ftr-desc">Бесплатно по России</p>
+            </div>
+            <div class="socials">
+                <a href=""><img src="assets/images/icons/whatsapp.svg" alt=""></a>
+                <a href=""><img src="assets/images/icons/vk.svg" alt=""></a>
+                <a href=""><img src="assets/images/icons/tg.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
